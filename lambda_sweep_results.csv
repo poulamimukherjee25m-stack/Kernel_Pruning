@@ -1,0 +1,6 @@
+Run,lambda1,lambda2,Train Acc (%),Train Loss,"Val Acc (%, best)",Val Loss,"Test Acc (%, compiled)",Test Loss (compiled),Params,Params Reduced (%),Pruning % (100-K_eff%),Status
+Baseline (dense ResNet-56),,,99.62,0.0136,92.57,,92.38,0.35,851514,0.0,0.0,complete
+lambda1=0,0.0,0.0,97.26,0.077,90.1,0.4258,89.92,0.4261,847882,0.427,0.5999999999999943,complete
+lambda1=0.1,0.1,0.0,96.01,0.1103,89.02,0.4162,88.27,0.4474,851914,-0.047,0.20000000000000284,complete
+lambda1=10,10.0,0.0,87.14,0.3716,83.75,0.5058,83.07,0.5221,853642,-0.25,0.0,complete
+lambda1=100,100.0,0.0,77.36,0.6437,76.54,0.6827,75.74,,,,0.0,"INCOMPLETE (run stopped ~epoch168/200, no final/compiled summary yet)"
