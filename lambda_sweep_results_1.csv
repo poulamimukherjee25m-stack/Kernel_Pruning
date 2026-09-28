@@ -1,0 +1,9 @@
+Run,lambda1,lambda2,Train Acc (%),Train Loss,Val Acc (%),Val Loss,Test Acc % (compiled),Test Loss (compiled),Params,Params Reduced (%),Pruning % (100-K_eff%),Status
+Baseline (dense ResNet-56),,,99.62,0.0136,92.57,,92.38,0.35,851514,0.0,0.0,complete
+"lambda1=0, lambda2=0",0.0,0.0,97.26,0.077,90.1,0.4258,89.92,0.4261,847882,0.427,0.6,complete
+"lambda1=0.1, lambda2=0",0.1,0.0,96.01,0.1103,89.02,0.4162,88.27,0.4474,851914,-0.047,0.2,complete
+"lambda1=1, lambda2=0",1.0,0.0,93.62,0.1823,87.07,0.4394,,,,,0.1,"INCOMPLETE (stopped epoch 194/200, no compiled/final summary yet -- values are epoch-194 snapshot)"
+"lambda1=10, lambda2=0",10.0,0.0,87.14,0.3716,83.75,0.5058,83.07,0.5221,853642,-0.25,0.0,complete
+"lambda1=100, lambda2=0",100.0,0.0,77.36,0.6437,76.54,0.6827,75.74,,,,0.0,"INCOMPLETE (stopped ~epoch168/200, best-so-far values, epoch164/159)"
+"lambda1=0, lambda2=0.01",0.0,0.01,31.2,1.9493,10.8,2.8531,,,,,99.6,COLLAPSED (chance-level acc.; stopped epoch88/200; not worth continuing)
+"lambda1=0, lambda2=0.1",0.0,0.1,10.05,2.3034,10.0,2.3032,,,,,100.0,COLLAPSED (dictionary emptied to K_eff=0; stopped epoch92/200; not worth continuing)
